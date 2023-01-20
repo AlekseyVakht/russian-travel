@@ -3,4 +3,26 @@
   height: 100%;
   text-decoration: none;
   color: white;
+  position: relative;
+  z-index: 0;
+  background-image: url("../../../images/cover-trains.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cover__link::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #2A2C2F;
+  transition: 1s linear;
+  opacity: .3;
+}
+
+.cover__link:hover::before{
+  opacity: .8;
 }
