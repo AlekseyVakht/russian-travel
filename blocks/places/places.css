@@ -23,5 +23,6 @@
   .places{
     width: 100%;
     gap: 50px;
+    margin-bottom: 66px;
   }
 }  
